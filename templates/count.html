@@ -1,0 +1,19 @@
+<h1>Count</h1>
+<a href="{% url 'home' %}">Start again</a>
+<h1>Entrered text</h1>
+there is {{ count }} words in your text.
+<br />
+{{ fulltext }}
+<br />
+<h1>Word count:</h1>
+
+{% for word, counttotal in worddictionary %}
+
+{{ word }} - {{ counttotal }}
+<br />
+
+{% endfor %}
+
+For information about the site click bellow.
+<br />
+<a href="{% url 'about'%}">More informations</a>

@@ -1,0 +1,12 @@
+<h1>my django site.</h1>
+{{slt}}
+<h1>Count word</h1>
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br/>
+    <input type="submit" value="Count"/>
+</form>    
+<br />
+For information about the site click bellow.
+<br />
+<a href="{% url 'about'%}">More informations</a>
